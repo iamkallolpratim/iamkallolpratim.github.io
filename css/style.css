@@ -184,7 +184,7 @@ body {
 	padding-bottom: 30px;
 }
 
-a:HOVER {
+a:HOVER , a:FOCUS, a:ACTIVE{
 	text-decoration: none;
 }
 
