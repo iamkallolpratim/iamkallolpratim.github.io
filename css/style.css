@@ -308,7 +308,7 @@ a:HOVER , a:FOCUS, a:ACTIVE{
 	-webkit-transition: all ease .5s;
 	-moz-transition: all ease .5s;
 	transition: all ease .5s;
-	width: 120px;
+	width: 70px;
 }
 
 .logo   img:HOVER {
