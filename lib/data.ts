@@ -36,7 +36,7 @@ export const experience: Experience[] = [
   {
     period: "Present",
     company: "ThoughtWorks",
-    role: "Engineering Leader",
+    role: "Lead Consultant",
     current: true,
     summary:
       "Leading engineering teams to design and deliver scalable, AI-powered software for global clients — bringing Generative AI into production systems with strong engineering practice behind it.",

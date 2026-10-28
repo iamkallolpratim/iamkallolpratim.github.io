@@ -4,11 +4,6 @@ export default function Hero() {
   return (
     <section id="top" className="hero container">
       <div className="hero-copy">
-        <div className="chip reveal">
-          <span className="pulse" />
-          Currently at <strong>{profile.company}</strong>
-        </div>
-
         <h1 className="hero-title reveal">
           Hi, I&apos;m {profile.firstName}.
           <br />
