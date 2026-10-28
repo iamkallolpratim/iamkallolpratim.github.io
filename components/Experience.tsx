@@ -3,41 +3,31 @@ import { experience, profile } from "@/lib/data";
 
 export default function Experience() {
   return (
-    <section id="experience" className="section container">
-      <SectionHead
-        index="02"
-        label="Experience"
-        title={
-          <>
-            {profile.years} years, <span className="grad-text">one trajectory</span>.
-          </>
-        }
-      />
+    <section id="experience" className="section">
+      <SectionHead a={`${profile.years} Years of`} b="Experience" />
 
-      <ol className="timeline">
+      <ul className="rows">
         {experience.map((job) => (
-          <li key={job.company} className={`tl-item reveal${job.current ? " is-current" : ""}`}>
-            <span className="tl-dot" aria-hidden />
-            <div className="card spot tl-card">
-              <div className="tl-top">
-                <p className="mono tl-period">
-                  {job.current && <span className="pulse" />}
-                  {job.period}
-                </p>
-                {job.current && <span className="badge">Current</span>}
-              </div>
-              <h3 className="tl-company">{job.company}</h3>
-              <p className="tl-role">{job.role}</p>
-              <p className="muted">{job.summary}</p>
-              <ul className="tags">
+          <li key={job.company} className="row exp reveal">
+            <div className="row-body">
+              <span className="row-title">
+                {job.company}
+                {job.current && <span className="chip chip-active">Current</span>}
+              </span>
+              <span className="row-kicker">{job.role}</span>
+              <span className="row-text">{job.summary}</span>
+              <span className="chips">
                 {job.tags.map((t) => (
-                  <li key={t}>{t}</li>
+                  <span key={t} className="chip">
+                    {t}
+                  </span>
                 ))}
-              </ul>
+              </span>
             </div>
+            <span className="exp-period">{job.period}</span>
           </li>
         ))}
-      </ol>
+      </ul>
     </section>
   );
 }

@@ -3,13 +3,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://iamkallolpratim.github.io"),
-  title: "Kallol Pratim Saikia — Engineering Leader @ ThoughtWorks",
+  title: "Kallol Pratim Saikia — Lead Consultant @ ThoughtWorks",
   description:
-    "Engineering leader and software architect with 11 years of experience building AI-native systems. Currently at ThoughtWorks.",
+    "Lead Consultant at ThoughtWorks and software architect with 11 years of experience building AI-native systems.",
   icons: { icon: "/img/favicon.png" },
   openGraph: {
     title: "Kallol Pratim Saikia",
-    description: "Engineering leader & software architect · 11 years · ThoughtWorks",
+    description: "Lead Consultant @ ThoughtWorks · Software architect · 11 years",
     url: "https://iamkallolpratim.github.io/",
     images: ["/img/dp.jpg"],
     type: "website",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary", creator: "@KallolPratim" },
 };
 
-export const viewport: Viewport = { themeColor: "#05060a" };
+export const viewport: Viewport = { themeColor: "#151312" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         />
       </head>
       <body>{children}</body>
