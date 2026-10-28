@@ -7,7 +7,7 @@ export const profile = {
   years: 11,
   headline: ["Software", "Architect"],
   tagline:
-    "Passionate about building AI-native systems that hold up in production — from governance engines to voice cloning — and leading the teams that build them.",
+    "Passionate about building AI-native systems that hold up in production. Specialize in transforming ideas into beautifully crafted products.",
   bio: "Full-stack engineer hooked on Cloud & AI. Lead Consultant at ThoughtWorks.",
   avatar: "/img/dp.jpg",
 };
