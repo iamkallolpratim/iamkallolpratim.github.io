@@ -2,19 +2,21 @@
 
 export const profile = {
   name: "Kallol Pratim Saikia",
-  firstName: "Kallol",
-  role: "Engineering Leader & Software Architect",
+  role: "Lead Consultant",
   company: "ThoughtWorks",
   years: 11,
-  location: "Northeast India",
+  headline: ["Software", "Architect"],
   tagline:
-    "I design and ship AI-native systems — from governance engines to voice cloning — and lead the teams that build them.",
-  about: [
-    "Engineering leader with 11 years of experience in software architecture and team leadership. I've built large-scale AI-powered applications end to end, and I care as much about how a system is operated as how it is designed.",
-    "An avid believer in open source with a keen interest in the evolving startup scene. Hailing from the north-eastern part of India, I'm a technology enthusiast learning something new every day.",
-  ],
+    "Passionate about building AI-native systems that hold up in production — from governance engines to voice cloning — and leading the teams that build them.",
+  bio: "Lead Consultant at ThoughtWorks, open-source builder and chess lover from Northeast India.",
   avatar: "/img/dp.jpg",
 };
+
+// The two feature tiles under the hero stats.
+export const focus = [
+  { title: "Generative AI, RAG & Agents", href: "#projects", tone: "vermilion" },
+  { title: "Next.js, Python, FastAPI, Cloud", href: "#tools", tone: "lime" },
+] as const;
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/iamkallolpratim", handle: "@iamkallolpratim" },
@@ -71,7 +73,7 @@ export const projects: Project[] = [
     description:
       "Treats AI compliance as software. Inventories your AI systems, detects which regimes apply — EU AI Act, California ADMT, China GenAI, India DPDP — classifies risk, evaluates policies with OPA and generates audit-ready evidence packages behind an immutable trail.",
     stack: ["Python", "FastAPI", "OPA", "SQLAlchemy", "Next.js"],
-    accent: "#7c5cff",
+    accent: "#C5FF41",
   },
   {
     name: "leak",
@@ -80,7 +82,7 @@ export const projects: Project[] = [
     description:
       "A local-first AI agent that reads your email, bank statements and SMS alerts to surface forgotten subscriptions, price hikes, duplicates and forex fees — then drafts cancellation emails for you to approve. PII is redacted before any LLM sees it. Hand-built agent harness, no frameworks.",
     stack: ["Python", "Agents", "SQLite", "FastAPI", "Privacy-first"],
-    accent: "#22d3ee",
+    accent: "#F46C38",
   },
   {
     name: "video-rag",
@@ -89,7 +91,7 @@ export const projects: Project[] = [
     description:
       "Paste a YouTube URL and get a summary, key takeaways, chapters and a timestamp-grounded chat. Audio is transcribed with Gemini, chunked with timestamps and indexed in ChromaDB, so every answer stays scoped to that one video.",
     stack: ["Python", "Gemini", "ChromaDB", "RAG", "Streamlit"],
-    accent: "#f472b6",
+    accent: "#C5FF41",
   },
   {
     name: "fli-watchlist",
@@ -98,7 +100,7 @@ export const projects: Project[] = [
     description:
       "A FastAPI service wrapping the fli library to monitor flight routes, sweep dates, store price history and send email alerts when fares drop below your threshold — with a scheduler doing the watching for you.",
     stack: ["Python", "FastAPI", "APScheduler", "SQLAlchemy", "Resend"],
-    accent: "#a3e635",
+    accent: "#F46C38",
   },
   {
     name: "rtcc-openvoice",
@@ -107,7 +109,7 @@ export const projects: Project[] = [
     description:
       "A fully local CLI for zero-shot voice cloning built on OpenVoice V2. Give it a 3–10 second reference clip to synthesise speech from text or convert any recording into the cloned voice, with streaming playback.",
     stack: ["Python", "OpenVoice", "PyTorch", "Audio", "Gradio"],
-    accent: "#fb923c",
+    accent: "#C5FF41",
   },
 ];
 

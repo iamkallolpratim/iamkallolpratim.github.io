@@ -1,10 +1,8 @@
-export default function SectionHead({ index, label, title }: { index: string; label: string; title: React.ReactNode }) {
+export default function SectionHead({ a, b }: { a: string; b: string }) {
   return (
-    <div className="section-head reveal">
-      <p className="eyebrow mono">
-        <span>{index}</span> / {label}
-      </p>
-      <h2 className="section-title">{title}</h2>
-    </div>
+    <h2 className="display display-sm reveal">
+      <span className="display-a">{a}</span>
+      <span className="display-b">{b}</span>
+    </h2>
   );
 }
