@@ -1,5 +1,6 @@
 import SectionHead from "./SectionHead";
 import { experience, profile } from "@/lib/data";
+import { withBrand } from "./Brand";
 
 export default function Experience() {
   return (
@@ -11,7 +12,7 @@ export default function Experience() {
           <li key={job.company} className="row exp reveal">
             <div className="row-body">
               <span className="row-title">
-                {job.company}
+                {withBrand(job.company)}
                 {job.current && <span className="chip chip-active">Current</span>}
               </span>
               <span className="row-kicker">{job.role}</span>
@@ -24,7 +25,7 @@ export default function Experience() {
                 ))}
               </span>
             </div>
-            <span className="exp-period">{job.period}</span>
+            <span className="exp-period">{withBrand(job.period)}</span>
           </li>
         ))}
       </ul>

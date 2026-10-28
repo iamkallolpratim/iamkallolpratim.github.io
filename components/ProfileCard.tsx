@@ -1,4 +1,5 @@
 import { profile, socials } from "@/lib/data";
+import { withBrand } from "./Brand";
 import { FlameIcon, GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from "./Icons";
 
 const socialIcons: Record<string, (p: { size?: number }) => React.ReactElement> = {
@@ -29,7 +30,7 @@ export default function ProfileCard() {
         <FlameIcon size={18} />
       </span>
 
-      <p className="profile-bio">{profile.bio}</p>
+      <p className="profile-bio">{withBrand(profile.bio)}</p>
 
       <ul className="profile-socials">
         {socials.map((s) => {
