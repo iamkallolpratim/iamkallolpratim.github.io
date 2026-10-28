@@ -67,6 +67,31 @@ ul {
   margin: 0;
 }
 
+/* Thoughtworks wordmark (CSS only) */
+
+.tw {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.08em;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+.tw-slash {
+  display: inline-block;
+  width: 0.15em;
+  height: 0.82em;
+  margin-right: 0.06em;
+  background: #f2617a;
+  transform: skewX(-24deg);
+}
+
+.profile .tw {
+  color: #003d4f;
+}
+
 /* ---------- Dock ---------- */
 
 .dock {
